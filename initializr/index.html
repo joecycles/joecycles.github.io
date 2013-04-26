@@ -35,113 +35,196 @@
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="navbar  navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav pull-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="pt/">Português</a></li>
-                                <li><a href="de/">Deutsch</a></li>
-                                <li class="active"><a href="#">English</a></li>
-                                <li><a href="fr/">Français</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="span6 center">
-                <div style="text-align:center;">
-                    <img src="http://placehold.it/350x150">                    
+        <div class="navbar  navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pt/">Português</a></li>
+                                    <li><a href="de/">Deutsch</a></li>
+                                    <li class="active"><a href="#">English</a></li>
+                                    <li><a href="fr/">Français</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="span6 center">
-                <h1>Joe Cycles</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+
+        <div class="container">
+            <div itemscope itemtype="http://schema.org/BikeStore">
                 <div class="row">
-                    <div class="span3">
-                    <div itemscope itemtype="http://schema.org/BikeStore">
-                        <h3></span itemprop="name">Joe Cycles</span></h3>
-                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                          <div itemprop="streetAddress">
-                            Caminho Lombo da Rocha, 97<br/>
-                            Edificio Paraiso, Fracção A
-                          </div>
-                          <span itemprop="postalCode">9370-612</span>
-                          <span itemprop="addressLocality">Prazeres</span><br/>
-                          <span itemprop="addressRegion">Madeira</span>,
-                          <span itemprop="addressCountry">Portugal</span>
+                    <div class="span6 center">
+                        <div class="logo" style="text-align:center;">
+                            <img src="http://placehold.it/600x150" itemprop="image" alt="Joe Cycles Logo">                    
                         </div>
-                        <div itemprop="telephone">(+351) 968 221 872</div>
-                        <a href="mailto:contact@joecycles.com" itemprop="email">contact@joecycles.com</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6 center">
+                        <p itemprop="description">Little text describing the shop. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                        <div class="row">
+                            <div class="span3">
 
-                        <h5 style="margin-bottom:0">Opening Hours:</h5>
-                        <dl class="dl-horizontal" style="margin-top:0">
-                          <dt>Mon-Wed</dt><dd>closed *</dd>
-                          <time itemprop="openingHours" datetime="Th-Su 15:00-21:00"><dt>Thu-Sun</dt><dd>3pm-9pm</dd></time>
-                          <p class="pull-right">* you can give us a call!</p>
+                                <h3><span itemprop="name">Joe Cycles</span></h3>
+                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <div itemprop="streetAddress">
+                                        Caminho Lombo da Rocha, 97<br/>
+                                        Edificio Paraiso, Fracção A
+                                    </div>
+                                    <span itemprop="postalCode">9370-612</span>
+                                    <span itemprop="addressLocality">Prazeres</span><br/>
+                                    <span itemprop="addressRegion">Madeira</span>,
+                                    <span itemprop="addressCountry">Portugal</span>
+                                </div>
+                                <div itemprop="telephone">(+351) 968 221 872</div>
+                                <a href="mailto:contact@joecycles.com" itemprop="email">contact@joecycles.com</a>
+
+                                <h5 style="margin-bottom:0">Opening Hours:</h5>
+                                <dl class="dl-horizontal" style="margin:0">
+                                    <dt>Mon-Wed</dt><dd>closed *</dd>
+                                    <dt>Thu-Sun</dt><dd><time itemprop="openingHours" datetime="Th-Su 15:00-21:00">3pm-9pm</time></dd>
+                                </dl>
+                                <p class="pull-right">* you can give us a call!</p>
+                            </div>
+                            <div class="span3">
+                                <div id="map_canvas" class="center" style="width:270px;height:270px;margin-top:20px;margin-bottom:20px;"></div>
+                            </div>
+                        </div>
+                        <h5 style="margin-bottom:0">We sell the following brands:</h5>
+                        <dl style="margin:0" class="dl-horizontal" itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+                            <dt itemprop="category">Bikes:</dt>
+                            <dd>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Kona</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Lapierre</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Yeti</span>
+                                </span>
+                                ...
+                            </dd>
+                            <dt itemprop="category">Components:</dt>
+                            <dd>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Chromag</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">DMR</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Formula</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">FOX</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Maxxis</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">ODI</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Renthal</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Straitline</span>
+                                </span>
+                                ...
+                            </dd>
+                            <dt itemprop="category">Accessories:</dt>
+                            <dd>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Pedro's</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">RSP</span>
+                                </span>
+                                ...
+                            </dd>
+                            <dt itemprop="category">Gear:</dt>
+                            <dd>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Bluegrass</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Five Ten</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">100%</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">POC</span>,
+                                </span>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Urge</span>
+                                </span>
+                                ...
+                            </dd>
+                            <dt itemprop="category">Apparel:</dt>
+                            <dd>
+                                <span itemprop="itemOffered" itemscope itemtype="http://schema.org/Product">
+                                    <span itemprop="name">Zimtstern</span>
+                                </span>
+                                ...
+                            </dd>
                         </dl>
-                    </div>
-                    </div>
-                    <div class="span3">
-                    <div id="map_canvas" class="center" style="width:300px;height:300px;margin-top:20px;margin-bottom:20px;"></div>
+                        <h5 style="margin-bottom:0">Workshop:</h5>
+                        <i class="icon-wrench"></i> <a href="#">Pricelist</a>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
-      <footer>
-        &copy; Joe Cycles 2013
-        <a href="#">+</a>
-        <div class="fb-like pull-right" data-href="https://www.facebook.com/joecycles.madeira" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
-      </footer>
-    </div> <!-- /container -->
+            <hr>
+            <footer>
+                &copy; Joe Cycles 2013
+                <a href="#">+</a>
+                <div class="fb-like pull-right" data-href="https://www.facebook.com/joecycles.madeira" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
+            </footer>
+        </div> <!-- /container -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 
-    <script>
+        <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIx2zjXxYDcLTNF1d09icu6-VJ4FE0xc&sensor=false" type="text/javascript"></script>
-    <script type="text/javascript">
-        function initialize() {
-            var myLatlng = new google.maps.LatLng("32.754419","-17.210513");
-            var mapOptions = {center:myLatlng, zoom:14, mapTypeId:google.maps.MapTypeId.ROADMAP};
-            var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-            var infowindow = new google.maps.InfoWindow({content: "<strong>Joe Cycles</strong><br/>Caminho Lombo da Rocha, 97<br/>Edificio Paraiso, Fracção A<br/>9370-612 Prazeres<br/>Madeira, Portugal"});
-            var marker = new google.maps.Marker({ position: myLatlng, map: map, title:"Joe Cycles"});
-            google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    </body>
-    </html>
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIx2zjXxYDcLTNF1d09icu6-VJ4FE0xc&sensor=false" type="text/javascript"></script>
+            <script type="text/javascript">
+            function initialize() {
+                var myLatlng = new google.maps.LatLng("32.754419","-17.210513");
+                var mapOptions = {center:myLatlng, zoom:14, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+                var infowindow = new google.maps.InfoWindow({content: "<strong>Joe Cycles</strong><br/>Caminho Lombo da Rocha, 97<br/>Edificio Paraiso, Fracção A<br/>9370-612 Prazeres<br/>Madeira, Portugal"});
+                var marker = new google.maps.Marker({ position: myLatlng, map: map, title:"Joe Cycles"});
+                google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+        </body>
+        </html>
