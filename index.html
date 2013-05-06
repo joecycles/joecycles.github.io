@@ -254,16 +254,17 @@ In addition, we organize through our <a href="http://www.bikulture.com">Bikultur
           ga('create', 'UA-247719-5', 'joecycles.com');
           ga('send', 'pageview');
         </script>
-            <script type="text/javascript">
-            function initialize() {
-                var myLatlng = new google.maps.LatLng("32.754419","-17.210513");
-                var mapOptions = {center:myLatlng, zoom:14, mapTypeId:google.maps.MapTypeId.ROADMAP};
-                var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-                var infowindow = new google.maps.InfoWindow({content: "<strong>Joe Cycles</strong><br/>Caminho Lombo da Rocha, 97<br/>Edificio Paraiso, Fracção A<br/>9370-612 Prazeres<br/>Madeira, Portugal"});
-                var marker = new google.maps.Marker({ position: myLatlng, map: map, title:"Joe Cycles"});
-                google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-            </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOIx2zjXxYDcLTNF1d09icu6-VJ4FE0xc&amp;sensor=false" type="text/javascript"></script>
+        <script type="text/javascript">
+        function initialize() {
+            var myLatlng = new google.maps.LatLng("32.754419","-17.210513");
+            var mapOptions = {center:myLatlng, zoom:14, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            var infowindow = new google.maps.InfoWindow({content: "<strong>Joe Cycles</strong><br/>Caminho Lombo da Rocha, 97<br/>Edificio Paraiso, Fracção A<br/>9370-612 Prazeres<br/>Madeira, Portugal"});
+            var marker = new google.maps.Marker({ position: myLatlng, map: map, title:"Joe Cycles"});
+            google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
         </body>
         </html>
